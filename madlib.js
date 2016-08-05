@@ -1,6 +1,6 @@
 var promptResponse = prompt("Are you ready for this exciting MadLib? Yes or No", "Yes");
 
-var sillyAlert = function(alertResponse) {
+var letsAGo = function(promptResponse) {
     if (promptResponse === "Yes") {
       alert("Yay! Let's a go!");
       madLib();
@@ -9,7 +9,7 @@ var sillyAlert = function(alertResponse) {
     }
 };
 
-sillyAlert(promptResponse);
+letsAGo(promptResponse);
 
 function madLib() {
     var adj1 = prompt("Choose an adjective.");
