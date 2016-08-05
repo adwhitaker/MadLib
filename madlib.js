@@ -5,35 +5,39 @@ var letsAGo = function(promptResponse) {
       alert("Yay! Let's a go!");
       madLib();
     } else {
-        alert("Boo! You suck!");
+        alert("Boo!");
     }
 };
 
 letsAGo(promptResponse);
 
 function madLib() {
-    var adj1 = prompt("Choose an adjective.");
-    var pluralNoun = prompt("Choose a plural noun.");
-    var ingVerb = prompt("Choose a verb ending in ing.");
-    var noun1 = prompt("Choose a noun.");
-    var pluralNoun2 = prompt("Choose a plural noun.");
-    var celebrityFemale = prompt("Choose a celebrity female.");
-    var maleInRoom = prompt("Choose a male name.");
-    var sillyWord = prompt("Choose a silly word.");
-    var sillyVerb = prompt("Choose a silly verb.");
-    var typeOfFoodPlural = prompt("Choose a type of food (plural).");
-    var noun2 = prompt("Choose a noun.");
-    var typeOfFood = prompt("Choose a type of food.");
-    var adj2 = prompt("Choose an adjective.");
-    var adj3 = prompt("Choose an adjective.");
-    var typeOfShoes = prompt("Choose a type of shoe (plural).");
-    var somethingAlive = prompt("Choose something alive.");
-    var noun3 = prompt("Choose a noun.");
-    var ingVerb2 = prompt("Choose a verb ending in ing.");
-    var adj4 = prompt("Choose an adjective.");
-    var sillyNoun = prompt("Choose a silly noun.");
+    var madLibObj = {
+        adj1: prompt("Choose an adjective."),
+        pluralNoun: prompt("Choose a plural noun."),
+        ingVerb: prompt("Choose a verb ending in ing."),
+        noun1: prompt("Choose a noun."),
+        pluralNoun2: prompt("Choose a plural noun."),
+        celebrityFemale: prompt("Choose a celebrity female."),
+        maleInRoom: prompt("Choose a male name."),
+        sillyWord: prompt("Choose a silly word."),
+        sillyVerb: prompt("Choose a silly verb."),
+        typeOfFoodPlural: prompt("Choose a type of food (plural)."),
+        noun2: prompt("Choose a noun."),
+        typeOfFood: prompt("Choose a type of food."),
+        adj2: prompt("Choose an adjective."),
+        adj3: prompt("Choose an adjective."),
+        typeOfShoes: prompt("Choose a type of shoe (plural)."),
+        somethingAlive: prompt("Choose something alive."),
+        noun3: prompt("Choose a noun."),
+        ingVerb2: prompt("Choose a verb ending in ing."),
+        adj4: prompt("Choose an adjective."),
+        sillyNoun: prompt("Choose a silly noun.")
+    };
 
-    console.log("One of the " +  adj1 + " things about summer is that my " + pluralNoun + " are " + ingVerb + " a huge party! I decided to throw a back yard " + noun1 + " for all of my family and " + pluralNoun2 + ". I have invited my best friend " + celebrityFemale + ", " + maleInRoom + ", and of course my neighbor, Ms. " + sillyWord + ". My dad is going to " + sillyVerb + " hamburgers and " + typeOfFoodPlural + " on his shiny new " + noun2 + ". He always thinks his " + typeOfFood + " tastes really " + adj2 + ", but I think they taste like " + adj3 + " " + typeOfShoes + ". My mom is going to make her famous " + somethingAlive + " salad, which is my favorite " + noun3 + " ever! My mom said, after we finish " + ingVerb2 + ", we can go swimming in our new " + adj4 + " " + sillyNoun + "!");
+    console.log("One of the " +  madLibObj.adj1 + " things about summer is that my " + madLibObj.pluralNoun + " are " + madLibObj.ingVerb + " a huge party! I decided to throw a back yard " + madLibObj.noun1 + " for all of my family and " + madLibObj.pluralNoun2 + ". I have invited my best friend " + madLibObj.celebrityFemale + ", " + madLibObj.maleInRoom + ", and of course my neighbor, Ms. " + madLibObj.sillyWord + ". My dad is going to " + madLibObj.sillyVerb + " hamburgers and " + madLibObj.typeOfFoodPlural + " on his shiny new " + noun2 + ". He always thinks his " + madLibObj.typeOfFood + " tastes really " + madLibObj.adj2 + ", but I think they taste like " + madLibObj.adj3 + " " + madLibObj.typeOfShoes + ". My mom is going to make her famous " + madLibObj.somethingAlive + " salad, which is my favorite " + madLibObj.noun3 + " ever! My mom said, after we finish " + madLibObj.ingVerb2 + ", we can go swimming in our new " + madLibObj.adj4 + " " + madLibObj.sillyNoun + "!");
 };
+
+
 
 
